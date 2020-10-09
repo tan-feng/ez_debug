@@ -1,10 +1,10 @@
 In my ten years of programming, I am absolutely convinced that printing is always the simpliest and the most powerful way
 of debugging and trouble-shooting for most applications in most senarios, especially 
-for a sophiscated procedure in user environment.
+for a sophiscated procedure in production environment.
 
 Direct calling printf()s is NOT what we want, so there we can see thousands of macros like #define my_debug(...).
 
-This is NOT just another macro, but maybe the right one that you have been wanting.
+But this is NOT just another macro, but maybe the right one that you have been wanting.
 
 This wrapper has the following in mind:
 1) Debugging prints are built in the app, ready to be turned on/off on-the-fly whenever the developer wants;
@@ -32,6 +32,9 @@ or
 export demo=1
 
 before launching your app(e.g. demo).
+to write debugging messages onto a file instead onto the console, 
+run
+export EZ_DEBUG_FILE=1
 
 to turn off the debugging, 
 run
